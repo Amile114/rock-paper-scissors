@@ -15,6 +15,9 @@ function getComputerChoice() {
 // playRound FUNCTION
 
 function playRound(playerSelection, computerSelection) {
+  playerSelection = playerSelection.toLowerCase();
+  computerSelection = computerSelection.toLowerCase();
+
   if (playerSelection === 'rock' && computerSelection === 'scissor') {
     console.log('Player WINS! Rock beats Scissor');
   }
@@ -44,7 +47,7 @@ function playRound(playerSelection, computerSelection) {
 // GAME FUNCTION
 function game() {
   for (let i = 0; i < 1; i++) {
-    console.log(playRound('paper', 'paper'))
+    console.log(playRound('Scissor', 'Paper'))
   }
 }
 game()
