@@ -12,7 +12,7 @@ function getComputerChoice() {
 }
 getComputerChoice();
 
-function singleRound(playerSelection, computerSelection) {
+function playRound(playerSelection, computerSelection) {
   if (playerSelection === 'rock' && computerSelection === 'scissor') {
     console.log('Player WINS! Rock beats Scissor');
   }
@@ -34,4 +34,4 @@ function singleRound(playerSelection, computerSelection) {
   
 };
 
-singleRound('paper', 'scissor')
+playRound('paper', 'scissor')
