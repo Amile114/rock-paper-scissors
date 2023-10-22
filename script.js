@@ -10,7 +10,9 @@ function getComputerChoice() {
   }
   
 }
-getComputerChoice();
+// getComputerChoice();
+
+// playRound FUNCTION
 
 function playRound(playerSelection, computerSelection) {
   if (playerSelection === 'rock' && computerSelection === 'scissor') {
@@ -31,7 +33,18 @@ function playRound(playerSelection, computerSelection) {
   else if (playerSelection === 'paper' && computerSelection === 'scissor') {
     console.log('Computer Wins, Scissor beats paper')
   }
+  else {
+    console.log('Try again!')
+  }
   
 };
 
-playRound('paper', 'scissor')
+// playRound('rock', 'paper');
+
+// GAME FUNCTION
+function game() {
+  for (let i = 0; i < 1; i++) {
+    console.log(playRound('paper', 'paper'))
+  }
+}
+game()
