@@ -12,3 +12,26 @@ function getComputerChoice() {
 }
 getComputerChoice();
 
+function singleRound(playerSelection, computerSelection) {
+  if (playerSelection === 'rock' && computerSelection === 'scissor') {
+    console.log('Player WINS! Rock beats Scissor');
+  }
+  else if (playerSelection === 'paper' && computerSelection === 'rock') {
+    console.log('Player wins, Paper beats Rock')
+  }
+  else if (playerSelection === 'scissor' && computerSelection === 'paper') {
+    console.log('Player wins, scissor beats paper')
+  }
+  else if (playerSelection === 'scissor' && computerSelection === 'rock') {
+    console.log('computer wins, rock beats scissor')
+  }
+  else if (playerSelection === 'rock' && computerSelection === 'paper') {
+    console.log('Computer Wins, Paper beats rock')
+  }
+  else if (playerSelection === 'paper' && computerSelection === 'scissor') {
+    console.log('Computer Wins, Scissor beats paper')
+  }
+  
+};
+
+singleRound('paper', 'scissor')
